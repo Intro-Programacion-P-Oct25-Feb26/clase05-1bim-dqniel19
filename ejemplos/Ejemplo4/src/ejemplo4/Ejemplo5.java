@@ -23,7 +23,8 @@ public class Ejemplo5 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
-
+        
+        // Se corrobora que la cadena ingresada sea diferente a la palabra Loja
         if (!ciudad.equals("Loja")) {
             System.out.printf("%s\n", "acceso correcto");
         } else {
@@ -31,7 +32,8 @@ public class Ejemplo5 {
         }
 
         int numero = 10;
-
+        
+        // Se corrobora que el numero ingresado no sea diferente a 10
         if (numero != 10) {
             System.out.println("correcto");
         }
