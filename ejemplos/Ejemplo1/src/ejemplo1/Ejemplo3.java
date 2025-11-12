@@ -9,29 +9,34 @@ import java.util.Scanner;
  *
  * @author UTPL
  */
-public class NewClass {
+public class Ejemplo3 {
     public static void main(String[] args) {
         // Condicionales simplesmain
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
+        
+        // Ingresar por teclado el limite de notas
+        double limiteNotas;
+        System.out.println("Ingrese el límite de Notas");
+        limiteNotas = entrada.nextDouble();
         
         double promedio;
         System.out.println("Ingrese un valor para analizar");
         promedio = entrada.nextDouble();
         
         
-        if (promedio >= 7.5) {
+        if (promedio >= limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
         
 
-        if (promedio == 7.5) {
+        if (promedio == limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio < 7.5) {
+        if (promedio < limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
